@@ -349,7 +349,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -462,7 +462,7 @@ Note: Do html redirect to the password reset successful page and kill the active
 + Parameters
     + user_id: "2d3343ae567c8f8a0b9e8f" (String, required) - The id of the user
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -531,12 +531,12 @@ Note: Do html redirect to the password reset successful page and kill the active
 
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + email: "foo@joo.com" (String)  - Email of the user
     + firstname: "Foo" (String)  - First name of the user
     + lastname: "John" (String)  - Last name of the user
-    + rangeFrom: "2017-03-01" (Date)  - Date range start
-    + rangeTo: "2017-03-15" (Date)  - Date range end
+    + from: "2017-03-01" (Date)  - Date range start
+    + to: "2017-03-15" (Date)  - Date range end
     + role: "worker" (Role)  - Role of the user
 
 + Response 200 (application/json)
@@ -563,7 +563,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -612,12 +612,12 @@ Note: Do html redirect to the password reset successful page and kill the active
 
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + email: "foo@joo.com" (String)  - Email of the user
     + firstname: "Foo" (String)  - First name of the user
     + lastname: "John" (String)  - Last name of the user
-    + rangeFrom: "2017-03-01" (Date)  - Date range start
-    + rangeTo: "2017-03-15" (Date)  - Date range end
+    + from: "2017-03-01" (Date)  - Date range start
+    + to: "2017-03-15" (Date)  - Date range end
 
 + Response 200 (text/csv)
 
@@ -734,7 +734,7 @@ Note: Do html redirect to the password reset successful page and kill the active
 + Parameters
     + user_id: "2d3343ae567c8f8a0b9e8f" (String, required) - The id of the user
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -750,7 +750,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -915,7 +915,7 @@ Note: Do html redirect to the password reset successful page and kill the active
 
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -931,7 +931,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -1099,7 +1099,7 @@ Note: Do html redirect to the password reset successful page and kill the active
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -1121,7 +1121,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -1322,7 +1322,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -1371,7 +1371,7 @@ Note: Do html redirect to the password reset successful page and kill the active
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -1571,7 +1571,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                     }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -1833,12 +1833,12 @@ Note: Do html redirect to the password reset successful page and kill the active
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + amount: 2000 (String)  - Amount of a booking
     + status: "completed" (String)  - Status of a booking
     + assigned_to: "f2dd3343ae567c8f8a0b9e8f" (String)  - The ID of the user which the booking is assigned to.
-    + rangeFrom: "2017-03-01" (Date)  - Date range start
-    + rangeTo: "2017-03-15" (Date)  - Date range end
+    + from: "2017-03-01" (Date)  - Date range start
+    + to: "2017-03-15" (Date)  - Date range end
     + assignedWorkerID: "dd3343ae567c8f8a0b9e8f" (Number) - The id of the assigned worker
 
 + Response 200 (application/json)
@@ -2039,7 +2039,7 @@ Note: Do html redirect to the password reset successful page and kill the active
                     }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -2430,12 +2430,12 @@ Refunds should go to the customers wallet's balance, so he can use it for anothe
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + amount: 2000 (String)  - Amount of a booking
     + status: "completed" (String)  - Status of a booking
     + id: "f2dd3343ae567c8f8a0b9e8f" (String)  - ID of a booking
-    + rangeFrom: "2017-03-01" (Date)  - Date range start
-    + rangeTo: "2017-03-15" (Date)  - Date range end
+    + from: "2017-03-01" (Date)  - Date range start
+    + to: "2017-03-15" (Date)  - Date range end
 
 + Response 200 (text/csv)
 
@@ -2486,7 +2486,7 @@ Check if the Worker matches some tags on the booking and worker is not assigned 
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + booking_id: "10" (Number)  - ID of the booking
     
 + Response 200 (application/json)
@@ -2513,7 +2513,7 @@ Check if the Worker matches some tags on the booking and worker is not assigned 
                     }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -2624,7 +2624,7 @@ Check if the Worker matches some tags on the booking and worker is not assigned 
     
 + Parameters
     + booking_id: "10" (Number)  - ID of the booking
-    + skip: "10" (Number) - Number of records to skip
+    + lastId: "a453d443fad4550" Stringr) - Last document Id on this record
     + limit: "10" (Number) - Number of records to return
 
 + Response 200 (application/json)
@@ -2651,7 +2651,7 @@ Check if the Worker matches some tags on the booking and worker is not assigned 
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -2959,10 +2959,10 @@ Remember to requery the transaction to confirm the true state from the processor
 + Parameters
     + user_id: "10" (Number)  - ID of the user
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + status: "completed" (String)  - Status of a booking
-    + rangeFrom: "2017-03-01" (Date)  - Date range start
-    + rangeTo: "2017-03-15" (Date)  - Date range end
+    + from: "2017-03-01" (Date)  - Date range start
+    + to: "2017-03-15" (Date)  - Date range end
 
 + Response 200 (application/json)
 
@@ -2988,7 +2988,7 @@ Remember to requery the transaction to confirm the true state from the processor
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -3086,7 +3086,7 @@ Remember to requery the transaction to confirm the true state from the processor
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -3207,7 +3207,7 @@ Remember to requery the transaction to confirm the true state from the processor
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -3271,7 +3271,7 @@ Remember to requery the transaction to confirm the true state from the processor
                 }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -3937,7 +3937,7 @@ If user_id is not provided, get current users wallet balance
     Authorization: dd3343ae567c8f8a0b9e8f
     
 + Parameters
-    + skip: "10" (Number) - Number of records to skip
+    + lastId: "a453d443fad4550" Stringr) - Last document Id on this record
     + limit: "10" (Number) - Number of records to return
 
 + Response 200 (application/json)
@@ -3957,7 +3957,7 @@ If user_id is not provided, get current users wallet balance
             }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -4005,7 +4005,7 @@ If user_id is not provided, get current users wallet balance
     Authorization: dd3343ae567c8f8a0b9e8f
     
 + Parameters
-    + skip: "10" (Number) - Number of records to skip
+    + lastId: "a453d443fad4550" Stringr) - Last document Id on this record
     + limit: "10" (Number) - Number of records to return
     + user_id: "10" (String) - Id of the user we want to get a statement for
 
@@ -4026,7 +4026,7 @@ If user_id is not provided, get current users wallet balance
             }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -4418,7 +4418,7 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -4460,7 +4460,7 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
             }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -4510,12 +4510,12 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
 
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + amount: 2000 (String)  - Amount of a product
     + name: "Some Name" (String)  - Status of a product
     + description: "Some Description" (String)  - description of a product
-    + rangeFrom: "2017-03-01" (Date)  - Date range start
-    + rangeTo: "2017-03-15" (Date)  - Date range end
+    + from: "2017-03-01" (Date)  - Date range start
+    + to: "2017-03-15" (Date)  - Date range end
 
 + Response 200 (application/json)
 
@@ -4557,7 +4557,7 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
             }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -4914,7 +4914,7 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
     
 + Parameters
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
     + featured: true (Boolean) - If this call should return only featured categories.
 
 + Response 200 (application/json)
@@ -4936,7 +4936,7 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
             }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
@@ -4986,7 +4986,7 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
 + Parameters
     + category_id: "F3dd3343ae567c8f8a0b9e8f" (Number) - Id of the category
     + limit: "10" (Number) - Number of records to return
-    + skip: "0" (Number)  - Number of records to skip
+    + lastId: "a453d443fad455" (String)  - Last document Id on this record
 
 + Response 200 (application/json)
 
@@ -5025,7 +5025,7 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
             }],
             "total": 200,
             "limit": 10,
-            "skip": 20
+            "lastId": "ade434feda4432dcae"
         }
         
 + Response 400 (application/json)
