@@ -659,6 +659,87 @@ Note: Do html redirect to the password reset successful page and kill the active
             "message": "unauthorized", // May come with a more detailed message sometimes
             "data": {}
         }
+
+### View User Permissions [GET /users/:user_id/permissions]
+
++ Headers
+    Authorization: dd3343ae567c8f8a0b9e8f
+
++ Parameters
+    + user_id: "10" (Number) - The ID of the user
+
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "data": {
+                    "id": "2d3343ae567c8f8a0b9e8f", 
+                    "roles": ["Admin","Customer","Public"],
+                    "permisions": [{
+                        "id": "2d3343ae567c8f8a0b9e8f", 
+                        "model": "User",
+                        "read": true,
+                        "update": false,
+                        "create": true,
+                        "delete": false
+                    },
+                    {
+                        "id": "2d3343ae567c8f8a0b9e8f", 
+                        "model": "Authentication",
+                        "read": true,
+                        "update": false,
+                        "create": true,
+                        "delete": false
+                    },
+                    {
+                        "id": "2d3343ae567c8f8a0b9e8f", 
+                        "model": "Transactions",
+                        "read": true,
+                        "update": false,
+                        "create": true,
+                        "delete": false
+                    }]
+                }
+        }
+        
++ Response 400 (application/json)
+        
+        {
+            "status": "error",
+            "message": "bad request", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 503 (application/json)
+        
+        {
+            "status": "error",
+            "message": "forbidden", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 404 (application/json)
+        
+        {
+            "status": "error",
+            "message": "not found"
+        }
+        
++ Response 500 (application/json)
+        
+        {
+            "status": "error",
+            "message": "server error", // May come with a more detailed message sometimes
+            "data": {}
+        }
+
++ Response 401 (application/json)
+        
+        {
+            "status": "error",
+            "message": "unauthorized", // May come with a more detailed message sometimes
+            "data": {}
+        }
         
 ### Invite Friends [GET /users/invite]
 
