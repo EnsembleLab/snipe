@@ -6196,3 +6196,198 @@ Alias `[GET /users/:user_id/products]` No need to pass `user_id` in JSON payload
             "message": "unauthorized", // May come with a more detailed message sometimes
             "data": {}
         }
+        
+## Clients [/clients]
+
+### Add New Client [POST]
+
++ Headers
+    Authorization: dd3343ae567c8f8a0b9e8f
+    
++ Request (application/json)
+
+        {
+            "name": "My App",
+            "redirect_url": "http://foo.com/redirect"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "data": {
+                "id": "6d3343ae567c8f8a0b9e8f",
+                "client_id": "6d3343ae567c8f8a0b9e8f",
+                "client_secret": "daily_limit", // can be a daily_limit or a per_transaction_limit
+                "redirect_url": 100,
+                "user_id": "2d3343ae567c8f8a0b9e8f"
+            }
+        }
+        
++ Response 400 (application/json)
+        
+        {
+            "status": "error",
+            "message": "bad request", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 503 (application/json)
+        
+        {
+            "status": "error",
+            "message": "forbidden", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 404 (application/json)
+        
+        {
+            "status": "error",
+            "message": "not found"
+        }
+        
++ Response 500 (application/json)
+        
+        {
+            "status": "error",
+            "message": "server error", // May come with a more detailed message sometimes
+            "data": {}
+        }
+
++ Response 401 (application/json)
+        
+        {
+            "status": "error",
+            "message": "unauthorized", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
+### Get Clients [GET]
+
++ Headers
+    Authorization: dd3343ae567c8f8a0b9e8f
+    
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "data": [{
+                "id": "6d3343ae567c8f8a0b9e8f",
+                "client_id": "6d3343ae567c8f8a0b9e8f",
+                "client_secret": "daily_limit", // can be a daily_limit or a per_transaction_limit
+                "redirect_url": 100,
+                "user_id": "2d3343ae567c8f8a0b9e8f"
+            },{
+                "id": "6d3343ae567c8f8a0b9e8f",
+                "client_id": "6d3343ae567c8f8a0b9e8f",
+                "client_secret": "daily_limit", // can be a daily_limit or a per_transaction_limit
+                "redirect_url": 100,
+                "user_id": "2d3343ae567c8f8a0b9e8f"
+            },{
+                "id": "6d3343ae567c8f8a0b9e8f",
+                "client_id": "6d3343ae567c8f8a0b9e8f",
+                "client_secret": "daily_limit", // can be a daily_limit or a per_transaction_limit
+                "redirect_url": 100,
+                "user_id": "2d3343ae567c8f8a0b9e8f"
+            }]
+        }
+        
++ Response 400 (application/json)
+        
+        {
+            "status": "error",
+            "message": "bad request", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 503 (application/json)
+        
+        {
+            "status": "error",
+            "message": "forbidden", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 404 (application/json)
+        
+        {
+            "status": "error",
+            "message": "not found"
+        }
+        
++ Response 500 (application/json)
+        
+        {
+            "status": "error",
+            "message": "server error", // May come with a more detailed message sometimes
+            "data": {}
+        }
+
++ Response 401 (application/json)
+        
+        {
+            "status": "error",
+            "message": "unauthorized", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
+### Remove Client [DELETE /clients/:id]
+
++ Headers
+    Authorization: dd3343ae567c8f8a0b9e8f
+    
++ Parameters
+    + id: "dd55fa76ce87cc78deffc3" (String) - Id of the client to be deleted
+
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "data": {
+                "id": "6d3343ae567c8f8a0b9e8f",
+                "client_id": "6d3343ae567c8f8a0b9e8f",
+                "client_secret": "daily_limit", // can be a daily_limit or a per_transaction_limit
+                "redirect_url": 100,
+                "user_id": "2d3343ae567c8f8a0b9e8f"
+            }
+        }
+        
++ Response 400 (application/json)
+        
+        {
+            "status": "error",
+            "message": "bad request", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 503 (application/json)
+        
+        {
+            "status": "error",
+            "message": "forbidden", // May come with a more detailed message sometimes
+            "data": {}
+        }
+        
++ Response 404 (application/json)
+        
+        {
+            "status": "error",
+            "message": "not found"
+        }
+        
++ Response 500 (application/json)
+        
+        {
+            "status": "error",
+            "message": "server error", // May come with a more detailed message sometimes
+            "data": {}
+        }
+
++ Response 401 (application/json)
+        
+        {
+            "status": "error",
+            "message": "unauthorized", // May come with a more detailed message sometimes
+            "data": {}
+        }
